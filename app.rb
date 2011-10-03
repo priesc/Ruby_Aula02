@@ -5,3 +5,7 @@ require 'sinatra'
 get '/' do
 	erb :index
 end
+
+get '/ola' do
+	erb :ola
+end
