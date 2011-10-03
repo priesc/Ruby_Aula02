@@ -2,8 +2,11 @@
 
 require 'sinatra'
 
-get '/' do
-	erb :index
+get '/:nome/:telefone/:email' do
+	@nome= params[:nome]
+	@telefone= params[:telefone]
+	@email= params[:email]
+	erb :index, layout: :layout #Padrão layout.erb
 end
 
 get '/ola' do
