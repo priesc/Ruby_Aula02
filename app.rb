@@ -18,9 +18,9 @@ get '/teste' do
 end
 
 post '/bom-dia' do
-
 	@nome= params[:nome]
 	@email= params[:email]
 	@telefone= params[:telefone]
+
 	erb :bomdia
 end
