@@ -9,3 +9,7 @@ end
 get '/ola' do
 	erb :ola
 end
+
+get '/teste' do
+	erb :teste
+end
